@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering — Yifei Wang</title>
+  <meta name="description" content="Engineering experience and projects by Yifei Wang: production ML, speech recognition, AI agents, robotics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='8' fill='%238dbcf6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html"><span aria-hidden="true"></span>Yifei Wang</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="engineering.html" aria-current="page">Engineering</a>
+        <a href="research.html">Research</a>
+        <a href="creativity.html">Creativity</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro wrap">
+      <p class="eyebrow">01 — Engineering</p>
+      <h1 class="display">Systems that <em>work</em><br>in the real world.</h1>
+      <p class="lede">From ML pipelines on factory-floor edge devices to a voice agent for emergency calls, I like taking models out of the notebook and making them dependable, fast and pleasant to use.</p>
+    </section>
+
+    <section class="section wrap reveal" id="experience">
+      <div class="section-head">
+        <h2 class="h2">Experience</h2>
+        <a class="link" href="about.html#resume">Full résumé <span class="arr">↗</span></a>
+      </div>
+
+      <div class="row">
+        <p class="when">May 2025 — Aug 2026</p>
+        <div>
+          <h3 class="h3">Data Science Intern</h3>
+          <p class="where">Martinrea International · Vaughan, ON</p>
+          <ul>
+            <li>Redesigned large-scale data pipelines to remove redundant computation across services, fitting <b>3× more deployments</b> on a single NVIDIA Jetson.</li>
+            <li>Generalized the ML framework across similar manufacturing jobs, cutting training and retraining needs by <b>4×</b> with no loss in performance.</li>
+            <li>Built real-time inference for a predictive-maintenance platform: live equipment monitoring and automated anomaly detection.</li>
+            <li>Automated model inference and validation, and built continuous validation tools that check ML-generated maintenance alerts against production data.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <p class="when">May — Aug 2023</p>
+        <div>
+          <h3 class="h3">Data Analytics Intern</h3>
+          <p class="where">International Digital Economy Academy (IDEA) · Shenzhen</p>
+          <ul>
+            <li>Improved the Chinese LLM <i>Ziya</i> on Text-to-SQL by <b>10%</b> through targeted fine-tuning.</li>
+            <li>Synthesized a 7k+ schema-linking dataset from CSpider using Decomposed In-Context Learning.</li>
+            <li>Shaped product features and positioning through weekly reviews of five competing products.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="projects">
+      <div class="section-head">
+        <h2 class="h2">Projects</h2>
+        <a class="link" href="https://github.com/yifeiw7">GitHub <span class="arr">↗</span></a>
+      </div>
+
+      <div class="grid two">
+        <article class="card" id="speechlink">
+          <div class="media">
+            <div class="tile wave" aria-hidden="true">
+              <svg viewBox="0 0 200 80" fill="none" stroke-width="2" stroke-linecap="round">
+                <path d="M10 40h8M24 30v20M32 18v44M40 26v28M48 10v60M56 22v36M64 32v16M72 14v52M80 24v32M88 36v8M96 20v40M104 6v68M112 18v44M120 28v24M128 12v56M136 24v32M144 34v12M152 20v40M160 28v24M168 36v8M176 30v20M184 40h8"/>
+              </svg>
+            </div>
+          </div>
+          <div class="meta"><span class="eyebrow">Speech recognition</span><span class="eyebrow">Sep — Nov 2024</span></div>
+          <h3 class="h3">SpeechLink: ASR for dysarthric speech</h3>
+          <p>Built in the RBC Let’s Solve It program. Fine-tuned OpenAI Whisper on the TORGO dataset, reducing word error rate from 1.73 to 0.30, an 80% improvement for speakers who are often misunderstood by voice tech.</p>
+          <div class="links">
+            <!-- TODO: add the SpeechLink project URL -->
+            <a class="link" href="#">Project <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <article class="card" id="opensos">
+          <div class="media">
+            <img src="assets/img/opensos.jpg" alt="OpenSOS emergency response agent" loading="lazy">
+            <span class="badge">1st · Smart Cities</span>
+          </div>
+          <div class="meta"><span class="eyebrow">AI agent · Voice</span><span class="eyebrow">Nov 2023</span></div>
+          <h3 class="h3">OpenSOS: Emergency response agent</h3>
+          <p>An automated voice guidance system for 911 calls that gives callers instant, accurate instructions while help is on the way. Built with the OpenAI API and AWS Connect; first place in Smart Cities at NewHacks 2023.</p>
+          <div class="links">
+            <a class="link" href="https://devpost.com/software/opensos-emergency-response-ai-agent">Devpost <span class="arr">↗</span></a>
+            <a class="link" href="https://github.com/yijie-04/OpenSOS-Emergency-Response-AI-Agent">Code <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <article class="card" id="smartgems">
+          <div class="media">
+            <img src="assets/img/smartgems.jpg" alt="SmartGEMS energy management system" loading="lazy">
+          </div>
+          <div class="meta"><span class="eyebrow">Energy · Embedded</span></div>
+          <h3 class="h3">SmartGEMS: Smart green energy management</h3>
+          <p>Optimizes energy source and distribution from real-time environmental conditions and power demand, keeping a renewable-heavy grid stable.</p>
+          <div class="links">
+            <a class="link" href="https://github.com/yifeiw7/SmartGEMS">Code <span class="arr">↗</span></a>
+            <a class="link" href="https://youtu.be/pFUpv1d8dA4">Video <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <article class="card" id="alex">
+          <div class="media">
+            <img src="assets/img/alex.jpg" alt="ALEX, an Arduino-based autonomous rover" loading="lazy">
+            <span class="badge">2nd of 35</span>
+          </div>
+          <div class="meta"><span class="eyebrow">Robotics</span><span class="eyebrow">2023</span></div>
+          <h3 class="h3">ALEX: Autonomous Mars rover</h3>
+          <p>An Arduino rover built for the RSX SEEK 2023 competition, placing second overall among 35 teams.</p>
+          <div class="links">
+            <a class="link" href="https://github.com/yifeiw7/ALEX-the-Mars-Rover">Code <span class="arr">↗</span></a>
+            <a class="link" href="https://www.youtube.com/watch?v=Fewr4BGj5NM">Video <span class="arr">↗</span></a>
+          </div>
+        </article>
+
+        <article class="card" id="elcano">
+          <div class="media">
+            <img src="assets/img/elcano.jpg" alt="Elcano course selection web app" loading="lazy">
+          </div>
+          <div class="meta"><span class="eyebrow">Web app · UX</span></div>
+          <h3 class="h3">Elcano: Course selection, redesigned</h3>
+          <p>A friendlier front end for UofT’s Magellan course-selection tool, making it easier for engineering students to plan their courses.</p>
+          <div class="links">
+            <a class="link" href="https://elcano-google.vercel.app/#/login">Live app <span class="arr">↗</span></a>
+            <a class="link" href="https://ieeeuoftweb.notion.site/Elcano-b313e13768484399ac16f18015781f95">Case study <span class="arr">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap reveal">
+      <div class="section-head"><h2 class="h2">Toolkit</h2></div>
+      <div class="facts">
+        <div>
+          <p class="eyebrow">Machine learning</p>
+          <ul><li>PyTorch</li><li>Computer vision</li><li>LLMs &amp; fine-tuning</li><li>Edge inference (Jetson)</li></ul>
+        </div>
+        <div>
+          <p class="eyebrow">Software</p>
+          <ul><li>Python</li><li>C / C++</li><li>Node.js</li><li>Git, Linux / Unix</li></ul>
+        </div>
+        <div>
+          <p class="eyebrow">Hardware</p>
+          <ul><li>Arduino</li><li>Embedded systems</li><li>Robotics</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="eyebrow">Say hello</p>
+      <p class="cta"><a href="mailto:yifeiwanglh7@gmail.com">yifeiwanglh7@gmail.com</a></p>
+      <div class="socials">
+        <a class="link" href="https://www.linkedin.com/in/yifei-wang-l7324/">LinkedIn <span class="arr">↗</span></a>
+        <a class="link" href="https://github.com/yifeiw7">GitHub <span class="arr">↗</span></a>
+        <a class="link" href="https://www.instagram.com/feiiy.w/">Instagram <span class="arr">↗</span></a>
+      </div>
+      <div class="bottom">
+        <span>© <span data-year>2026</span> Yifei Wang</span>
+        <span>Toronto, Canada</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
