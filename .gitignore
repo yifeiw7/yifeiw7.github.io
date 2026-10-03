@@ -1,9 +1,7 @@
 .DS_Store
 
-# Full-resolution originals; the site uses the optimized copies in assets/img/art and assets/img/*.jpg
-assets/img/creativity/
-assets/img/research/
+# Full-resolution source files; the site serves optimized copies from assets/img/
+originals/
 
 # Personal notes and source media not served by the site
 dance.txt
-runaway_storyboard.MOV
